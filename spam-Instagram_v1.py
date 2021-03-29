@@ -73,11 +73,11 @@ def instagram_spam():
         }
         res_report = session.post(urlrep, data=data_spam)
         if res_report.text.find("Your reports help keep our community free of spam.") >= 0:
-            print(f"[+] Done Spam: {done_spam}")
+            print(f"\r[+] Done Spam: {done_spam}",end="")
             done_spam += 1
             sleep(sleep_time)
         else:
-            print(f"[+]Error Spam: {done_spam}")
+            print(f"\r[+]Error Spam: {done_spam}",end="")
             error_spam += 1
             sleep(20)
 
