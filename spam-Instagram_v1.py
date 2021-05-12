@@ -50,7 +50,7 @@ def login():
         "mid": cookie
     }
     res_login = session.post(url, headers=headers, data=data, allow_redirects=True)
-    if res_login.json()["authenticated"] == True:
+    if res_login.json()["authenticated"]:
         print(f"[√] LOGIN DONE :{username}")
         print("\n")
         session.headers.update({'X-CSRFToken': res_login.cookies['csrftoken']})
