@@ -15,7 +15,7 @@ clear = lambda: os.system("cls") if system() == "Windows" else os.system("clear"
 
 
 def adminFounder(url: str) -> None:
-    with open("admin_paths.txt", "r") as file:
+    with open("adminPath.txt", "r") as file:
         paths = file.read().split()
         for path in paths:
             fullUrl = f"{url}/{path}"
