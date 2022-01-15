@@ -1,2 +1,2 @@
 # random-python-projects
-some python project good for beginners
+some python projects good for beginners
